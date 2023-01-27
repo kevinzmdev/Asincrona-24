@@ -1,0 +1,25 @@
+<section class="container mb-2 p-5 w-50">
+  <section class="card shadow-2-strong" style="border-color: rgb(46, 46, 153)">
+    <section class="card-body p-4">
+      <section class="container">
+        <h1 class="mb-5 text-center">Angular</h1>
+        <ol>
+          <li>
+            <mat-form-field appearance="fill">
+              <mat-label>Cual es tu nombre?</mat-label>
+              <input matInput [(ngModel)]="nombre" />
+            </mat-form-field>
+          </li>
+          <li>
+            <button mat-raised-button color="primary" (click)="openDialog()">
+              Abri Dialogo
+            </button>
+          </li>
+          <li *ngIf="deporte" class="mb-5">
+            Tu deporte favorito es: <i>{{ deporte }}</i>
+          </li>
+        </ol>
+      </section>
+    </section>
+  </section>
+</section>
